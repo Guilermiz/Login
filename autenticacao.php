@@ -24,7 +24,7 @@ else if(isset($_POST['btnLogin'])){
         header("location:areaRestrita.php");
     }else{
 
-        header("location:index.php");
+        header("location:index.php?erro");
     }
 }else if(isset($_GET['sair'])){
     $_SESSION['name'] = null;
