@@ -1,3 +1,15 @@
+<?php
+
+if(isset($_GET['erro'])){
+    $erro = 'erro';
+    // var_dump($erro);
+}else{
+    $erro = '';
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +19,10 @@
     <style>
         .container{
             margin-top: 15%;
+        }
+        .aviso{
+            margin-bottom: 10px;
+            color: red;
         }
     </style>
 
@@ -25,7 +41,10 @@
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
                         <input type="password" class="form-control" id="senha" name="inputSenha" placeholder="Senha" required>
-                    </div><br>
+                    </div>
+                    <div class="aviso">
+                        <small id="incorreto" hidden>Usuario ou Senha incorretos</small><br>
+                    </div>
                     <button type="submit" name="btnLogin" class="btn btn-primary">Enviar</button>
                 </form><br>
                 <p>Não tem Registro? <a href="cadastrar.php">Cadastre-se</a></p>
@@ -33,5 +52,14 @@
             <div class="col-md-3"></div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        var usuSenIncorreto = '<?php echo $erro ?>';
+        window.onload = function(){
+            if(usuSenIncorreto === 'erro'){
+                document.getElementById('incorreto').removeAttribute('hidden');
+            }
+        }
+    </script>
 </body>
 </html>
