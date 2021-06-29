@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
-    <title>Cadastro</title>
 
     <style>
         .container{
             margin-top: 10%;
         }
     </style>
+    
+   <title>Cadastro</title>
 
 </head>
 <body>
