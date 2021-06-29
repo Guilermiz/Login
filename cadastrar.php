@@ -7,7 +7,7 @@
 
     <style>
         .container{
-            margin-top: 15%;
+            margin-top: 10%;
         }
     </style>
 
@@ -15,27 +15,28 @@
 <body>
     <div class="container">
             <form method="POST" action="autenticacao.php">
-                <div class="form-group row">
-                    <label for="nome" class="col-sm-2 col-form-label">Nome</label>
-                    <div class="col-sm-10">
-                    <input type="text" class="form-control" id="nome" placeholder="nome" name="cadastrarNome">
+
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="nome" class="col-sm-2 col-form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="nome" name="cadastrarNome">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-2 col-form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" name="cadastrarEmail">
+                        </div><br>
+                        <div class="form-group">
+                            <label for="senha" class="col-sm-2 col-form-label">Senha</label>
+                            <input type="password" class="form-control" id="senha" name="cadastrarSenha" placeholder="Senha">
+                        </div><br>
+                        <div style="text-align: center;">
+                            <a href="index.php" class="btn btn-danger">Voltar</a>
+                            <button  type="submit" class="btn btn-primary" name="btnCadastrar">Enviar</button>
+                        </div>
                     </div>
-                </div><br>
-                <div class="form-group row">
-                    <label for="email" class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email" placeholder="Email" name="cadastrarEmail">
-                    </div>
-                </div><br>
-                <div class="form-group row">
-                    <label for="senha" class="col-sm-2 col-form-label">Senha</label>
-                    <div class="col-sm-10">
-                    <input type="password" class="form-control" id="senha" name="cadastrarSenha" placeholder="Senha">
-                    </div>
-                </div><br>
-                <div style="text-align: center;">
-                    <a href="index.php" class="btn btn-danger">Voltar</a>
-                    <button  type="submit" class="btn btn-primary" name="btnCadastrar">Enviar</button>
+                    <div class="col-md-3"></div>
                 </div>
         </form>
     </div>
