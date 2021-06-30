@@ -21,15 +21,15 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="nome" class="col-sm-2 col-form-label">Nome</label>
-                            <input type="text" class="form-control" id="nome" placeholder="nome" name="cadastrarNome">
+                            <input type="text" class="form-control" id="nome" placeholder="nome" name="cadastrarNome" required>
                         </div><br>
                         <div class="form-group">
                             <label for="email" class="col-sm-2 col-form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email" name="cadastrarEmail">
+                            <input type="email" class="form-control" id="email" placeholder="Email" name="cadastrarEmail" required>
                         </div><br>
                         <div class="form-group">
                             <label for="senha" class="col-sm-2 col-form-label">Senha</label>
-                            <input type="password" class="form-control" id="senha" name="cadastrarSenha" placeholder="Senha">
+                            <input type="password" class="form-control" id="senha" name="cadastrarSenha" placeholder="Senha" required>
                         </div><br>
                         <div style="text-align: center;">
                             <a href="index.php" class="btn btn-danger">Voltar</a>
