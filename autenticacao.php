@@ -26,7 +26,8 @@ else if(isset($_POST['btnLogin'])){
 
         header("location:index.php?erro");
     }
-}else if(isset($_GET['sair'])){
+}
+else if(isset($_GET['sair'])){
     $_SESSION['name'] = null;
     $_SESSION['email'] = null;
     header("location:index.php");
