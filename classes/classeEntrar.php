@@ -15,7 +15,7 @@ class Login extends DBconexao{
 
     public function conferir($email, $senha){
 
-        $sql = "SELECT * FROM t_Cadastro WHERE email = ? AND senha = ?";
+        $sql = "SELECT * FROM t_cadastro WHERE email = ? AND senha = ?";
 
         try{
             $this->pdo = $this->conectar();
