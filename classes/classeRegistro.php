@@ -6,7 +6,7 @@ class Registro extends DBconexao{
 
     private $pdo;
     private $stm;
-    private $table = 't_Cadastro';
+    private $table = 't_cadastro';
     private $resultado;
     private $nome;
     private $email;
