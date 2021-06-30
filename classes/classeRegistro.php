@@ -17,7 +17,7 @@ class Registro extends DBconexao{
     public function getEmail(){ return $this->email;}
     public function setEmail($email) { $this->email = $email;  }
     public function getSenha(){   return $this->senha;  }
-    public function setSenha($senha){   $this->senha = $senha;}
+    public function setSenha($senha){   $this->senha = SHA1($senha);}
 
     public function inserirRegistro(){
 
