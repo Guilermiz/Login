@@ -9,7 +9,7 @@ if(isset($_POST['btnCadastrar'])){
     $novoCadastro = new Registro();
     $novoCadastro->setNome($_POST['cadastrarNome']);
     $novoCadastro->setEmail($_POST['cadastrarEmail']);
-    $novoCadastro->setSenha(SHA1($_POST['cadastrarSenha']));
+    $novoCadastro->setSenha($_POST['cadastrarSenha']);
     $novoCadastro->inserirRegistro();
     header("location:index.php");
 }
