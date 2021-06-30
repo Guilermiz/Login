@@ -33,7 +33,7 @@
                         </div><br>
                         <div style="text-align: center;">
                             <a href="index.php" class="btn btn-danger">Voltar</a>
-                            <button  type="submit" class="btn btn-primary" name="btnCadastrar">Enviar</button>
+                            <button  type="submit" class="btn btn-primary" id="btnCadastrar" name="btnCadastrar">Enviar</button>
                         </div>
                     </div>
                     <div class="col-md-3"></div>
