@@ -40,5 +40,13 @@
                 </div>
         </form>
     </div>
+    
+<script type="text/javascript">
+    document.getElementById('btnCadastrar').addEventListener('click', alertar);
+    function alertar(){
+        alert('Usuário cadastrado com sucesso');
+    }
+</script>
+    
 </body>
 </html>
