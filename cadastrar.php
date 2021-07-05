@@ -44,7 +44,12 @@
 <script type="text/javascript">
     document.getElementById('btnCadastrar').addEventListener('click', alertar);
     function alertar(){
-        alert('Usuário cadastrado com sucesso');
+        var nome = document.getElementById('nome').value;
+        var email = document.getElementById('email').value;
+        var senha = document.getElementById('senha').value;
+        if((nome !== "" && email !== "" && senha !== "") && email.match('@')){
+            alert('Usuário cadastrado com sucesso');
+        }
     }
 </script>
     
